@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Currency Converter</title>
+
+   <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" /> 
+
+   
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+  
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="api.css" />
+</head>
+<body>
+  <div class="container">
+    <h2><i class="fas fa-coins"></i> Currency Converter</h2>
+
+    <form>
+      <div class="amount">
+        <p>Enter Amount</p>
+        <input value="1" type="text" />
+      </div>
+
+      <div class="dropdown">
+        <!-- From Currency -->
+        <div class="from">
+          <p>From</p>
+          <div class="select-container">
+            <img src="https://flagsapi.com/US/flat/64.png" alt="From Country Flag" />
+            <select name="from" class="from-select"></select>
+          </div>
+        </div>
+
+        <!-- Arrow -->
+        <div class="swap-btn" title="Swap Currencies">
+            <i class="fas fa-retweet fa-2x"></i>
+          
+             
+          </div>
+          
+
+        <!-- To Currency -->
+        <div class="to">
+          <p>To</p>
+          <div class="select-container">
+            <img src="https://flagsapi.com/IN/flat/64.png" alt="To Country Flag" />
+            <select name="to" class="to-select"></select>
+          </div>
+        </div>
+      </div>
+
+      <!-- Message Box -->
+      <div class="msg">1 USD = 80 INR</div>
+
+      <!-- Submit Button -->
+      <button type="submit"><i class="fas fa-sync-alt"></i> Get Exchange Rate</button>
+    </form>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="code.js"></script>
+  <script src="api.js"></script>
+</body>
+</html>
